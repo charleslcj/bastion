@@ -21,6 +21,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
 .gold{color:var(--gold)}
 h1,h2,h3{line-height:1.2;color:var(--navy)}
+/* top bar */
 .topbar{background:var(--navy);color:#fff;position:sticky;top:0;z-index:30}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.5px}
@@ -34,6 +35,7 @@ h1,h2,h3{line-height:1.2;color:var(--navy)}
 .nav .quote{background:var(--gold);color:var(--navy);font-weight:800;padding:9px 16px;border-radius:6px;font-size:13.5px}
 .nav .quote:hover{background:#d9a838}
 @media(max-width:760px){.nav a.lnk,.nav .phone{display:none}}
+/* hero */
 .hero{position:relative;color:#eef2f6;overflow:hidden}
 .hero .bg{position:absolute;inset:0;background:url('port-hero.jpg') center/cover;}
 .hero .ov{position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,20,36,.94) 0%,rgba(10,28,50,.82) 42%,rgba(10,28,50,.5) 100%)}
@@ -47,6 +49,7 @@ h1,h2,h3{line-height:1.2;color:var(--navy)}
 .btn-gold:hover{background:#d9a838}
 .btn-ghost{border:1.5px solid #5b7190;color:#fff}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+/* hero data card */
 .hcard{background:#fff;border-radius:14px;box-shadow:0 24px 60px rgba(4,12,24,.45);padding:16px;color:var(--ink)}
 .hc-head{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:11px}
 .hc-head .dot{width:8px;height:8px;border-radius:50%;background:#27ae60;box-shadow:0 0 0 3px rgba(39,174,96,.18)}
@@ -56,12 +59,14 @@ h1,h2,h3{line-height:1.2;color:var(--navy)}
 .hc-kpis div .v{font-size:14px;font-weight:800;color:var(--navy)}
 .hc-kpis div .k{font-size:10.5px;color:#8a96a2}
 @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}.hero h1{font-size:33px}.hcard{max-width:460px}}
+/* stats */
 .stats{background:var(--navy2);color:#fff}
 .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:30px 24px}
 .stats .s{text-align:center}
 .stats .s .v{font-size:30px;font-weight:800;color:var(--gold);line-height:1}
 .stats .s .k{font-size:12.5px;color:#c2ccd7;margin-top:6px}
 @media(max-width:680px){.stats .wrap{grid-template-columns:1fr 1fr;gap:22px}}
+/* section */
 section.blk{padding:62px 0}
 .sec-head{text-align:center;max-width:64ch;margin:0 auto 40px}
 .sec-head .k{color:var(--gold);font-weight:700;letter-spacing:2px;font-size:12px;text-transform:uppercase}
@@ -77,6 +82,7 @@ section.blk{padding:62px 0}
 .card .pri{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.5px;color:var(--navy);background:var(--gold);padding:2px 7px;border-radius:3px;margin-left:6px;vertical-align:middle}
 .card p{font-size:14px;color:var(--muted);margin-bottom:10px}
 .card .naics{font-size:11.5px;color:#94a0ac;font-family:"SFMono-Regular",Menlo,monospace}
+/* why */
 .why{background:var(--navy)}
 .why h2{color:#fff}
 .why .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
@@ -86,12 +92,14 @@ section.blk{padding:62px 0}
 .why .col p{font-size:13.5px;color:#bcc8d4;padding-left:12px}
 .why .deliver{margin-top:34px;font-size:14.5px;color:#cdd7e1;border-top:1px solid #294056;padding-top:22px;max-width:92ch}
 .why .deliver b{color:#fff}
+/* leadership */
 .lead-wrap{display:flex;gap:38px;align-items:center;max-width:940px;margin:0 auto}
 .lead-wrap .ph{flex:none;width:172px;height:172px;border-radius:50%;object-fit:cover;border:4px solid var(--gold);box-shadow:0 10px 30px rgba(12,32,54,.16)}
 .lead-wrap h3{font-size:21px}
 .lead-wrap .role{color:var(--gold);font-weight:700;font-size:13px;letter-spacing:.5px;margin:2px 0 12px}
 .lead-wrap p{font-size:14.5px;color:var(--muted)}
 @media(max-width:620px){.lead-wrap{flex-direction:column;text-align:center}}
+/* registrations */
 .reg{background:var(--soft)}
 .regtable{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;max-width:920px;margin:0 auto}
 .regtable .row{display:flex;border-bottom:1px solid var(--line);font-size:14px}
@@ -100,9 +108,28 @@ section.blk{padding:62px 0}
 .regtable .v{padding:12px 16px;color:var(--ink)}
 .regtable .v b{color:var(--navy)}
 @media(max-width:560px){.regtable .row{flex-direction:column}.regtable .k{flex:none;border-right:none;border-bottom:1px solid var(--line)}}
+/* area */
 .area{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
 .area span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:7px 15px;font-size:13.5px;font-weight:600;color:var(--navy)}
 .area span.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+/* quote form */
+.quote-sec{background:var(--soft)}
+.qwrap{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 38px rgba(12,32,54,.09);padding:34px 32px}
+.qok{display:none;background:#e8f6ee;border:1px solid #b7e0c6;color:#1d6b3a;border-radius:8px;padding:14px 16px;font-size:14.5px;font-weight:600;margin-bottom:22px}
+.qform{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.qform .full{grid-column:1 / -1}
+.qform label{display:block;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:5px;letter-spacing:.3px}
+.qform input,.qform select,.qform textarea{width:100%;border:1px solid var(--line);border-radius:7px;padding:11px 12px;font-size:14.5px;font-family:inherit;color:var(--ink);background:#fff;transition:.15s}
+.qform input:focus,.qform select:focus,.qform textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,151,43,.16)}
+.qform textarea{resize:vertical;min-height:96px}
+.qform .sub{grid-column:1 / -1;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:4px}
+.qform button{background:var(--gold);color:var(--navy);font-weight:800;font-size:15px;border:none;border-radius:7px;padding:13px 30px;cursor:pointer;transition:.15s}
+.qform button:hover{background:#d9a838}
+.qform .hint{font-size:13px;color:var(--muted)}
+.qform .hint a{color:var(--navy);font-weight:700}
+.qhoney{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+@media(max-width:560px){.qform{grid-template-columns:1fr}.qwrap{padding:26px 20px}}
+/* contact */
 .contact{background:var(--navy);color:#dfe6ed;text-align:center}
 .contact h2{color:#fff}
 .contact .lines{font-size:18px;margin:18px 0 8px;font-weight:700;color:#fff}
@@ -122,9 +149,10 @@ footer.foot .gold{color:var(--gold)}
     <a class="lnk" href="#services">Services</a>
     <a class="lnk" href="capability-statement.html">Capability Statement</a>
     <a class="phone" href="tel:+12137889999">(213) 788-9999</a>
-    <a class="quote" href="mailto:charles@bastionserve.com?subject=Quote%20request%20%E2%80%94%20Bastion%20Supply%20%26%20Logistics">Request a Quote</a>
+    <a class="quote" href="#quote">Request a Quote</a>
   </div>
 </div></div>
+
 <header class="hero" id="top">
   <div class="bg"></div><div class="ov"></div>
   <div class="wrap">
@@ -133,7 +161,7 @@ footer.foot .gold{color:var(--gold)}
       <h1>Move your freight with precision — and your supply chain with strategy.</h1>
       <p class="lead">Bastion Supply &amp; Logistics is a third-party logistics, freight-forwarding, and supply-chain consulting firm at the Port of Los Angeles / Long Beach. We coordinate drayage, transload, warehousing, and nationwide distribution through a vetted carrier network — and improve the operation behind it with Amazon-scale consulting, financial-operations discipline, and AI-driven analytics.</p>
       <div class="cta">
-        <a class="btn btn-gold" href="mailto:charles@bastionserve.com?subject=Quote%20request%20%E2%80%94%20Bastion%20Supply%20%26%20Logistics">Request a Quote</a>
+        <a class="btn btn-gold" href="#quote">Request a Quote</a>
         <a class="btn btn-ghost" href="#services">Explore Services</a>
       </div>
     </div>
@@ -167,12 +195,14 @@ footer.foot .gold{color:var(--gold)}
     </div>
   </div>
 </header>
+
 <div class="stats"><div class="wrap">
   <div class="s"><div class="v">7 yrs</div><div class="k">Amazon-scale operations leadership</div></div>
   <div class="s"><div class="v">600+</div><div class="k">associates led</div></div>
   <div class="s"><div class="v">30+</div><div class="k">3PL partners managed</div></div>
   <div class="s"><div class="v">8</div><div class="k">SoCal counties · nationwide reach</div></div>
 </div></div>
+
 <section class="blk" id="services"><div class="wrap">
   <div class="sec-head"><div class="k">Capabilities</div><h2>3PL, freight forwarding &amp; supply-chain consulting</h2>
     <p>We move the freight — and improve the operation behind it. From the dock to the data, Bastion is built to make your logistics measurably better.</p></div>
@@ -185,6 +215,7 @@ footer.foot .gold{color:var(--gold)}
     <div class="card"><h3>AI-Driven Capture &amp; Analytics</h3><p>Opportunity intelligence, capability matching, requirements / compliance (RTM) matrices, and cost build-ups — technology that finds, qualifies, and prices the right work.</p><div class="naics">Capture · pricing · analytics</div></div>
   </div>
 </div></section>
+
 <section class="blk why"><div class="wrap">
   <div class="sec-head"><div class="k" style="color:var(--gold)">The Bastion difference</div><h2>Why clients choose Bastion</h2></div>
   <div class="grid4">
@@ -195,6 +226,7 @@ footer.foot .gold{color:var(--gold)}
   </div>
   <p class="deliver"><b>How we deliver.</b> Bastion operates as a working prime: we self-perform planning, coordination, QA/QC, DOT/CARB safety and compliance oversight, customer interface, and invoicing — and scale execution through a vetted network of partner carriers and warehouses. For government teaming, we're an SBA-certified SDVOSB / California DVBE that self-performs CUF-compliant work.</p>
 </div></section>
+
 <section class="blk"><div class="wrap">
   <div class="sec-head"><div class="k">Leadership</div><h2>An operator's playbook, a CFO's discipline</h2></div>
   <div class="lead-wrap">
@@ -206,6 +238,7 @@ footer.foot .gold{color:var(--gold)}
     </div>
   </div>
 </div></section>
+
 <section class="blk reg"><div class="wrap">
   <div class="sec-head"><div class="k">Procurement-Ready</div><h2>Registrations &amp; identifiers</h2></div>
   <div class="regtable">
@@ -218,19 +251,61 @@ footer.foot .gold{color:var(--gold)}
     <div class="row"><div class="k">Additional NAICS</div><div class="v">493110 · 484220 · 484230 · 424710 · 488490</div></div>
   </div>
 </div></section>
+
 <section class="blk reg" style="background:#fff"><div class="wrap">
   <div class="sec-head"><div class="k">Coverage</div><h2>Service area</h2></div>
   <div class="area"><span class="primary">Los Angeles</span><span>Orange</span><span>Riverside</span><span>San Bernardino</span><span>Ventura</span><span>San Diego</span><span>Kern</span><span>Imperial</span></div>
   <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:14px">Freight forwarding &amp; consulting engagements nationwide.</p>
 </div></section>
+
+<section class="blk quote-sec" id="quote"><div class="wrap">
+  <div class="sec-head"><div class="k">Request a quote</div><h2>Tell us what you need moved</h2>
+    <p>Send the lane, the commodity, and the timeline — we respond same day with a quote or a quick call.</p></div>
+  <div class="qwrap">
+    <div class="qok" id="qok">✓ Thanks — your request is in. We'll reply the same business day from charles@bastionserve.com.</div>
+    <form class="qform" action="https://formsubmit.co/charles@bastionserve.com" method="POST">
+      <div><label for="qn">Name</label><input id="qn" type="text" name="Name" required></div>
+      <div><label for="qc">Company</label><input id="qc" type="text" name="Company"></div>
+      <div><label for="qe">Email</label><input id="qe" type="email" name="Email" required></div>
+      <div><label for="qp">Phone</label><input id="qp" type="tel" name="Phone"></div>
+      <div class="full"><label for="qs">What do you need?</label>
+        <select id="qs" name="Service">
+          <option>3PL / freight forwarding — move a shipment</option>
+          <option>Drayage / transload at LA / Long Beach</option>
+          <option>Warehousing / distribution</option>
+          <option>Specialty / regulated freight (fuel, hazmat, reefer)</option>
+          <option>Supply-chain consulting / network optimization</option>
+          <option>Fractional CFO / financial operations</option>
+          <option>Government teaming / subcontract</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="full"><label for="qd">Details — lane, commodity, volume, timeline</label><textarea id="qd" name="Details" placeholder="e.g. 4 × 40HC from Port of Long Beach to a Riverside DC, dry goods, weekly, starting next month"></textarea></div>
+      <input type="text" name="_honey" class="qhoney" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New quote request — Bastion Supply &amp; Logistics website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://bastionserve.com/?sent=1#quote">
+      <div class="sub">
+        <button type="submit">Send request</button>
+        <span class="hint">Prefer email? <a href="mailto:charles@bastionserve.com">charles@bastionserve.com</a> · (213) 788-9999</span>
+      </div>
+    </form>
+  </div>
+</div></section>
+
 <section class="blk contact" id="contact"><div class="wrap">
   <div class="sec-head"><div class="k" style="color:var(--gold)">Let's talk</div><h2>Shippers, primes &amp; operators</h2></div>
   <div class="lines"><a href="tel:+12137889999">(213) 788-9999</a> &nbsp;·&nbsp; <a href="mailto:charles@bastionserve.com">charles@bastionserve.com</a></div>
   <p class="sub">Need freight moved, a network optimized, or a supply chain that runs leaner — we respond same day. Downey, California.</p>
 </div></section>
+
 <footer class="foot"><div class="wrap">
   PURECJ HOLDING LLC dba <span class="gold">Bastion Supply &amp; Logistics</span> · Downey, California · © 2026<br>
   Third-party logistics, freight forwarding &amp; supply-chain consulting · SDVOSB / DVBE certified · SAM-registered
 </div></footer>
+<script>
+(function(){if(location.search.indexOf('sent=1')>-1){var q=document.getElementById('qok');if(q){q.style.display='block';setTimeout(function(){q.scrollIntoView({block:'center'});},120);}}})();
+</script>
 </body>
 </html>

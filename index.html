@@ -34,6 +34,8 @@ h1,h2,h3{line-height:1.2;color:var(--navy)}
 .nav .phone{color:#fff;font-weight:700;white-space:nowrap}
 .nav .quote{background:var(--gold);color:var(--navy);font-weight:800;padding:9px 16px;border-radius:6px;font-size:13.5px}
 .nav .quote:hover{background:#d9a838}
+.nav .lang-toggle{background:transparent;border:1.5px solid #5b7190;color:#fff;font-weight:700;padding:6px 12px;border-radius:6px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.nav .lang-toggle:hover{border-color:var(--gold);color:var(--gold)}
 @media(max-width:760px){.nav a.lnk,.nav .phone{display:none}}
 /* hero */
 .hero{position:relative;color:#eef2f6;overflow:hidden}
@@ -146,11 +148,12 @@ footer.foot .gold{color:var(--gold)}
     <span><span class="bn">BASTION</span><br><span class="bs">SUPPLY &amp; LOGISTICS</span></span>
   </a>
   <div class="nav">
-    <a class="lnk" href="#services">Services</a>
-    <a class="lnk" href="capability-statement.html">Capability Statement</a>
-    <a class="lnk" href="https://app.bastionserve.com">Client Portal</a>
+    <a class="lnk" href="#services" data-en="Services" data-zh="服务">Services</a>
+    <a class="lnk" href="capability-statement.html" data-en="Capability Statement" data-zh="能力声明">Capability Statement</a>
+    <a class="lnk" href="https://app.bastionserve.com" data-en="Client Portal" data-zh="客户门户">Client Portal</a>
     <a class="phone" href="tel:+12137889999">(213) 788-9999</a>
-    <a class="quote" href="https://app.bastionserve.com">Instant Quote</a>
+    <a class="quote" href="https://app.bastionserve.com" data-en="Instant Quote" data-zh="立即报价">Instant Quote</a>
+    <button type="button" id="langToggle" class="lang-toggle" aria-label="切换语言 / Toggle language">中文</button>
   </div>
 </div></div>
 
@@ -158,16 +161,16 @@ footer.foot .gold{color:var(--gold)}
   <div class="bg"></div><div class="ov"></div>
   <div class="wrap">
     <div>
-      <div class="eyebrow">3PL · Freight Brokerage · Supply-Chain Consulting</div>
-      <h1>Move your freight with precision — and your supply chain with strategy.</h1>
-      <p class="lead">Bastion Supply &amp; Logistics is a third-party logistics, freight-brokerage (FMCSA Broker of Property, USDOT #5796599), and supply-chain consulting firm at the Port of Los Angeles / Long Beach. We arrange drayage, transload coordination, and nationwide FTL/LTL through a vetted carrier network — and improve the operation behind it with Amazon-scale consulting, financial-operations discipline, and AI-driven analytics.</p>
+      <div class="eyebrow" data-en="3PL · Freight Brokerage · Supply-Chain Consulting" data-zh="3PL · 货运经纪 · 供应链咨询">3PL · Freight Brokerage · Supply-Chain Consulting</div>
+      <h1 data-en="Move your freight with precision — and your supply chain with strategy." data-zh="精准移动您的货运——并战略布局您的供应链。">Move your freight with precision — and your supply chain with strategy.</h1>
+      <p class="lead" data-en="Bastion Supply & Logistics is a third-party logistics, freight-brokerage (FMCSA Broker of Property, USDOT #5796599), and supply-chain consulting firm at the Port of Los Angeles / Long Beach. We arrange drayage, transload coordination, and nationwide FTL/LTL through a vetted carrier network — and improve the operation behind it with Amazon-scale consulting, financial-operations discipline, and AI-driven analytics." data-zh="贝松供应与物流是位于洛杉矶/长滩港的第三方物流、货运经纪（FMCSA 财产货运经纪，USDOT #5796599）和供应链咨询公司。我们居间安排港口拖车、转运换装，以及全国范围内的整车/零担运输——通过精选承运人网络，并运用亚马逊规模的咨询、财务运营规范和AI驱动分析，优化背后的运营。">Bastion Supply & Logistics is a third-party logistics, freight-brokerage (FMCSA Broker of Property, USDOT #5796599), and supply-chain consulting firm at the Port of Los Angeles / Long Beach. We arrange drayage, transload coordination, and nationwide FTL/LTL through a vetted carrier network — and improve the operation behind it with Amazon-scale consulting, financial-operations discipline, and AI-driven analytics.</p>
       <div class="cta">
-        <a class="btn btn-gold" href="https://app.bastionserve.com">Get an Instant Quote &rarr;</a>
-        <a class="btn btn-ghost" href="#quote">Talk to Us</a>
+        <a class="btn btn-gold" href="https://app.bastionserve.com" data-en="Get an Instant Quote &rarr;" data-zh="获取即时报价 &rarr;">Get an Instant Quote &rarr;</a>
+        <a class="btn btn-ghost" href="#quote" data-en="Talk to Us" data-zh="联系我们">Talk to Us</a>
       </div>
     </div>
     <div class="hcard">
-      <div class="hc-head"><span class="dot"></span> Bastion network <span class="mut">Pacific gateway</span></div>
+      <div class="hc-head"><span class="dot"></span> <span data-en="Bastion network" data-zh="Bastion 网络">Bastion network</span> <span class="mut" data-en="Pacific gateway" data-zh="太平洋门户">Pacific gateway</span></div>
       <svg viewBox="0 0 380 196" class="hc-map" xmlns="http://www.w3.org/2000/svg">
         <rect width="380" height="196" rx="9" fill="#0e2742"/>
         <g stroke="#1d3a5c" stroke-width="1">
@@ -189,125 +192,155 @@ footer.foot .gold{color:var(--gold)}
         <text x="70" y="150" text-anchor="middle" fill="#e7c987" font-size="10" font-family="Arial" font-weight="700">LA / Long Beach</text>
       </svg>
       <div class="hc-kpis">
-        <div><div class="v">LA / LB</div><div class="k">Pacific gateway</div></div>
-        <div><div class="v">Nationwide</div><div class="k">distribution reach</div></div>
-        <div><div class="v">Drayage→Door</div><div class="k">end-to-end</div></div>
+        <div><div class="v" data-en="LA / LB" data-zh="洛杉矶/长滩">LA / LB</div><div class="k" data-en="Pacific gateway" data-zh="太平洋门户">Pacific gateway</div></div>
+        <div><div class="v" data-en="Nationwide" data-zh="全国">Nationwide</div><div class="k" data-en="distribution reach" data-zh="配送范围">distribution reach</div></div>
+        <div><div class="v" data-en="Drayage→Door" data-zh="港口拖车/短驳→门">Drayage→Door</div><div class="k" data-en="end-to-end" data-zh="端到端">end-to-end</div></div>
       </div>
     </div>
   </div>
 </header>
 
 <div class="stats"><div class="wrap">
-  <div class="s"><div class="v">7 yrs</div><div class="k">Amazon-scale operations leadership</div></div>
-  <div class="s"><div class="v">600+</div><div class="k">associates led</div></div>
-  <div class="s"><div class="v">30+</div><div class="k">3PL partners managed</div></div>
-  <div class="s"><div class="v">8</div><div class="k">SoCal counties · nationwide reach</div></div>
+  <div class="s"><div class="v" data-en="7 yrs" data-zh="7年">7 yrs</div><div class="k" data-en="Amazon-scale operations leadership" data-zh="亚马逊规模运营领导">Amazon-scale operations leadership</div></div>
+  <div class="s"><div class="v" data-en="600+" data-zh="600+">600+</div><div class="k" data-en="associates led" data-zh="带领的员工">associates led</div></div>
+  <div class="s"><div class="v" data-en="30+" data-zh="30+">30+</div><div class="k" data-en="3PL partners managed" data-zh="3PL合作伙伴管理">3PL partners managed</div></div>
+  <div class="s"><div class="v" data-en="8" data-zh="8">8</div><div class="k" data-en="SoCal counties · nationwide reach" data-zh="南加州县 · 全国覆盖">SoCal counties · nationwide reach</div></div>
 </div></div>
 
 <section class="blk" id="services"><div class="wrap">
-  <div class="sec-head"><div class="k">Capabilities</div><h2>3PL, freight brokerage &amp; supply-chain consulting</h2>
-    <p>We move the freight — and improve the operation behind it. From the dock to the data, Bastion is built to make your logistics measurably better.</p></div>
+  <div class="sec-head"><div class="k" data-en="Capabilities" data-zh="服务能力">Capabilities</div><h2 data-en="3PL, freight brokerage & supply-chain consulting" data-zh="3PL、货运经纪 & 供应链咨询">3PL, freight brokerage & supply-chain consulting</h2>
+    <p data-en="We move the freight — and improve the operation behind it. From the dock to the data, Bastion is built to make your logistics measurably better." data-zh="我们转运货运—并提升其背后的运营。从码头到数据，Bastion旨在使您的物流显著更优。">We move the freight — and improve the operation behind it. From the dock to the data, Bastion is built to make your logistics measurably better.</p></div>
   <div class="grid">
-    <div class="card primary"><h3>Third-Party Logistics &amp; Freight Brokerage<span class="pri">CORE</span></h3><p>Freight arrangement and carrier management, dispatch and tendering, drayage, and door-to-door coordination across a vetted Southern California and nationwide network.</p><div class="naics">NAICS 488510 · 541614 · 541618</div></div>
-    <div class="card primary"><h3>Supply-Chain Consulting<span class="pri">CORE</span></h3><p>Network and route optimization, SOP build-out, KPI and scorecard design, cost-to-serve analysis, and operations diagnostics — the Amazon-scale operating playbook applied to your operation.</p><div class="naics">NAICS 541614</div></div>
-    <div class="card"><h3>Warehousing &amp; Transload</h3><p>Cross-dock, port-adjacent transload, and short-term storage arranged through vetted partner facilities for containerized and break-bulk cargo, with inventory coordination.</p><div class="naics">NAICS 493110</div></div>
-    <div class="card"><h3>Specialty &amp; Regulated Freight</h3><p>Bulk fuel, hazmat, and refrigerated freight — local and long-haul — executed through vetted, compliant carrier partners.</p><div class="naics">NAICS 488510 · 424710</div></div>
-    <div class="card"><h3>Financial Operations &amp; Fractional CFO</h3><p>Pricing, margin, cash, budget governance, and cost-model discipline — five years advising small businesses as a fractional CFO and growth consultant.</p><div class="naics">NAICS 541614</div></div>
-    <div class="card"><h3>AI-Driven Capture &amp; Analytics</h3><p>Opportunity intelligence, capability matching, requirements / compliance (RTM) matrices, and cost build-ups — technology that finds, qualifies, and prices the right work.</p><div class="naics">Capture · pricing · analytics</div></div>
-    <div class="card"><h3>BG Console — Our Operating Platform<span class="pri">IN-HOUSE</span></h3><p>Every brokered load runs on our proprietary operating platform: instant quoting with transparent pass-through pricing, tokenized shipment tracking your team can open from any link, carrier vetting with hard compliance gates (FMCSA data, CA DLSE §2810.4, CARB drayage registry), and detention &amp; demurrage invoice audit under 46 CFR 541.6 — with a named human approving every regulated decision. <a href="https://app.bastionserve.com" style="color:var(--accent,#2DD4BF);font-weight:600">Try the live demo &rarr;</a></p><div class="naics">Quote · track · vet · audit</div></div>
+    <div class="card primary"><h3 data-en="Third-Party Logistics & Freight Brokerage" data-zh="第三方物流与货运经纪">Third-Party Logistics & Freight Brokerage<span class="pri" data-en="CORE" data-zh="核心">CORE</span></h3><p data-en="Freight arrangement and carrier management, dispatch and tendering, drayage, and door-to-door coordination across a vetted Southern California and nationwide network." data-zh="货运安排与承运人管理，调度与投标，港口拖车/短驳，以及经审核的南加州和全国范围内的门到门协调。">Freight arrangement and carrier management, dispatch and tendering, drayage, and door-to-door coordination across a vetted Southern California and nationwide network.</p><div class="naics">NAICS 488510 · 541614 · 541618</div></div>
+    <div class="card primary"><h3 data-en="Supply-Chain Consulting" data-zh="供应链咨询">Supply-Chain Consulting<span class="pri" data-en="CORE" data-zh="核心">CORE</span></h3><p data-en="Network and route optimization, SOP build-out, KPI and scorecard design, cost-to-serve analysis, and operations diagnostics — the Amazon-scale operating playbook applied to your operation." data-zh="网络和路线优化，SOP建设，KPI和评分卡设计，成本分析，以及运营诊断——适用于您业务的亚马逊规模运营手册。">Network and route optimization, SOP build-out, KPI and scorecard design, cost-to-serve analysis, and operations diagnostics — the Amazon-scale operating playbook applied to your operation.</p><div class="naics">NAICS 541614</div></div>
+    <div class="card"><h3 data-en="Warehousing & Transload" data-zh="仓储与转运">Warehousing & Transload</h3><p data-en="Cross-dock, port-adjacent transload, and short-term storage arranged through vetted partner facilities for containerized and break-bulk cargo, with inventory coordination." data-zh="跨码头转运、港口附近转运换装及短期仓储，通过经过审查的合作伙伴设施为集装箱及散货货物安排，并协调库存。">Cross-dock, port-adjacent transload, and short-term storage arranged through vetted partner facilities for containerized and break-bulk cargo, with inventory coordination.</p><div class="naics">NAICS 493110</div></div>
+    <div class="card"><h3 data-en="Specialty & Regulated Freight" data-zh="特种与监管货运">Specialty & Regulated Freight</h3><p data-en="Bulk fuel, hazmat, and refrigerated freight — local and long-haul — executed through vetted, compliant carrier partners." data-zh="散装燃料、危险品和冷藏货物——本地和长途——通过经过审核的合规承运人伙伴执行。">Bulk fuel, hazmat, and refrigerated freight — local and long-haul — executed through vetted, compliant carrier partners.</p><div class="naics">NAICS 488510 · 424710</div></div>
+    <div class="card"><h3 data-en="Financial Operations & Fractional CFO" data-zh="财务运营 & 兼职CFO">Financial Operations & Fractional CFO</h3><p data-en="Pricing, margin, cash, budget governance, and cost-model discipline — five years advising small businesses as a fractional CFO and growth consultant." data-zh="定价、利润率、现金、预算管理、成本模型纪律——五年担任小型企业兼职CFO和增长顾问的经验。">Pricing, margin, cash, budget governance, and cost-model discipline — five years advising small businesses as a fractional CFO and growth consultant.</p><div class="naics">NAICS 541614</div></div>
+    <div class="card"><h3 data-en="AI-Driven Capture & Analytics" data-zh="AI驱动采集与分析">AI-Driven Capture & Analytics</h3><p data-en="Opportunity intelligence, capability matching, requirements / compliance (RTM) matrices, and cost build-ups — technology that finds, qualifies, and prices the right work." data-zh="机会情报，能力匹配，需求/合规（RTM）矩阵，成本构建——技术发现、评估和定价正确的工作。">Opportunity intelligence, capability matching, requirements / compliance (RTM) matrices, and cost build-ups — technology that finds, qualifies, and prices the right work.</p><div class="naics">Capture · pricing · analytics</div></div>
+    <div class="card"><h3 data-en="BG Console — Our Operating Platform" data-zh="BG控制台 — 我们的操作平台">BG Console — Our Operating Platform<span class="pri" data-en="IN-HOUSE" data-zh="内部">IN-HOUSE</span></h3><p data-en='Every brokered load runs on our proprietary operating platform: instant quoting with transparent pass-through pricing, tokenized shipment tracking your team can open from any link, carrier vetting with hard compliance gates (FMCSA data, CA DLSE §2810.4, CARB drayage registry), and detention & demurrage invoice audit under 46 CFR 541.6 — with a named human approving every regulated decision. <a href="https://app.bastionserve.com" style="color:var(--accent,#2DD4BF);font-weight:600">Try the live demo &rarr;</a>' data-zh='每笔货运经纪都运行在我们专有的操作平台上：即时报价，透明转手定价，通过任何链接即可开启的代币化货运跟踪，承运人审查设有严格的合规门槛（FMCSA数据，CA DLSE §2810.4，CARB短驳注册），以及46 CFR 541.6下的等候费/滞箱费发票审核——每项受监管的决定都由指定人员批准。 <a href="https://app.bastionserve.com" style="color:var(--accent,#2DD4BF);font-weight:600">体验实时演示 &rarr;</a>'>Every brokered load runs on our proprietary operating platform: instant quoting with transparent pass-through pricing, tokenized shipment tracking your team can open from any link, carrier vetting with hard compliance gates (FMCSA data, CA DLSE §2810.4, CARB drayage registry), and detention & demurrage invoice audit under 46 CFR 541.6 — with a named human approving every regulated decision. <a href="https://app.bastionserve.com" style="color:var(--accent,#2DD4BF);font-weight:600">Try the live demo &rarr;</a></p><div class="naics">Quote · track · vet · audit</div></div>
   </div>
 </div></section>
 
 <section class="blk why"><div class="wrap">
-  <div class="sec-head"><div class="k" style="color:var(--gold)">The Bastion difference</div><h2>Why clients choose Bastion</h2></div>
+  <div class="sec-head"><div class="k" style="color:var(--gold)" data-en="The Bastion difference" data-zh="Bastion 优势">The Bastion difference</div><h2 data-en="Why clients choose Bastion" data-zh="为什么客户选择Bastion">Why clients choose Bastion</h2></div>
   <div class="grid4">
-    <div class="col"><div class="t">Operations pedigree</div><p>Seven years of Amazon-scale operations leadership — 600+ associates, 30+ 3PL partners — running freight to hard safety, routing, quality, and cost KPIs.</p></div>
-    <div class="col"><div class="t">A vetted network, not fixed overhead</div><p>Drayage, transload, and partner warehousing capacity sized to each shipment across SoCal and nationwide — scalable, with no idle fleet on your cost.</p></div>
-    <div class="col"><div class="t">Consulting &amp; financial rigor</div><p>Network optimization, cost-to-serve analysis, and fractional-CFO discipline that lower your landed cost and de-risk delivery.</p></div>
-    <div class="col"><div class="t">Technology edge</div><p>AI-driven opportunity intelligence, analytics, and proposal / cost tooling that compress weeks of work into hours.</p></div>
+    <div class="col"><div class="t" data-en="Operations pedigree" data-zh="运营谱系">Operations pedigree</div><p data-en="Seven years of Amazon-scale operations leadership — 600+ associates, 30+ 3PL partners — running freight to hard safety, routing, quality, and cost KPIs." data-zh="七年亚马逊规模运营领导经验 — 600+ 伙伴，30+ 3PL 合作伙伴 — 管理货运安全、路线、质量及成本关键绩效指标。">Seven years of Amazon-scale operations leadership — 600+ associates, 30+ 3PL partners — running freight to hard safety, routing, quality, and cost KPIs.</p></div>
+    <div class="col"><div class="t" data-en="A vetted network, not fixed overhead" data-zh="经过审核的网络，无固定成本">A vetted network, not fixed overhead</div><p data-en="Drayage, transload, and partner warehousing capacity sized to each shipment across SoCal and nationwide — scalable, with no idle fleet on your cost." data-zh="港口拖车、转运换装及合作伙伴仓储能力按每票货物在SoCal及全国范围内定制——可扩展，无需闲置车队增加您的成本。">Drayage, transload, and partner warehousing capacity sized to each shipment across SoCal and nationwide — scalable, with no idle fleet on your cost.</p></div>
+    <div class="col"><div class="t" data-en="Consulting & financial rigor" data-zh="咨询 & 财务严谨">Consulting & financial rigor</div><p data-en="Network optimization, cost-to-serve analysis, and fractional-CFO discipline that lower your landed cost and de-risk delivery." data-zh="网络优化、成本分析及兼职CFO管理，降低您的到岸成本，降低交付风险。">Network optimization, cost-to-serve analysis, and fractional-CFO discipline that lower your landed cost and de-risk delivery.</p></div>
+    <div class="col"><div class="t" data-en="Technology edge" data-zh="技术优势">Technology edge</div><p data-en="AI-driven opportunity intelligence, analytics, and proposal / cost tooling that compress weeks of work into hours." data-zh="AI驱动机会智能、分析和提案/成本工具，将数周工作压缩至数小时。">AI-driven opportunity intelligence, analytics, and proposal / cost tooling that compress weeks of work into hours.</p></div>
   </div>
-  <p class="deliver"><b>How we deliver.</b> Bastion operates as a working prime: we self-perform planning, coordination, QA/QC, DOT/CARB safety and compliance oversight, customer interface, and invoicing — and scale execution through a vetted network of partner carriers and warehouses. For government teaming, we're an SBA-certified SDVOSB / California DVBE that self-performs CUF-compliant work.</p>
+  <p class="deliver" data-en="<b>How we deliver.</b> Bastion operates as a working prime: we self-perform planning, coordination, QA/QC, DOT/CARB safety and compliance oversight, customer interface, and invoicing — and scale execution through a vetted network of partner carriers and warehouses. For government teaming, we're an SBA-certified SDVOSB / California DVBE that self-performs CUF-compliant work." data-zh="<b>我们如何交付：</b>Bastion 以自营主承包商（working prime）身份运营：我们自行执行规划、协调、质量保证/质量控制、DOT/CARB安全与合规监督、客户对接和开票——并通过经过审核的合作伙伴承运人和仓库网络进行规模化执行。对于政府联合项目，我们是SBA认证的SDVOSB/加州DVBE，自行履行符合CUF规范的工作。"><b>How we deliver.</b> Bastion operates as a working prime: we self-perform planning, coordination, QA/QC, DOT/CARB safety and compliance oversight, customer interface, and invoicing — and scale execution through a vetted network of partner carriers and warehouses. For government teaming, we're an SBA-certified SDVOSB / California DVBE that self-performs CUF-compliant work.</p>
 </div></section>
 
 <section class="blk"><div class="wrap">
-  <div class="sec-head"><div class="k">Leadership</div><h2>An operator's playbook, a CFO's discipline</h2></div>
+  <div class="sec-head"><div class="k" data-en="Leadership" data-zh="领导团队">Leadership</div><h2 data-en="An operator's playbook, a CFO's discipline" data-zh="操作员手册，CFO的准则">An operator's playbook, a CFO's discipline</h2></div>
   <div class="lead-wrap">
     <img class="ph" src="founder.jpg" alt="Charles Liu, Founder & Managing Member">
     <div>
       <h3>Charles Liu</h3>
-      <div class="role">FOUNDER &amp; MANAGING MEMBER</div>
-      <p>Seven years leading Amazon logistics operations — 600-plus associates and 30+ third-party logistics partners — building the SOPs, metrics, and scorecards that ran them. UCLA Anderson MBA, and five years as a fractional CFO and growth consultant to small businesses. Charles pairs an operator's playbook with a CFO's discipline — and an AI analytics engine — to run client supply chains as a 3PL and improve the operations behind them. (U.S. Army Quartermaster veteran, 92Y.)</p>
+      <div class="role" data-en="FOUNDER & MANAGING MEMBER" data-zh="创始人 & 管理合伙人">FOUNDER & MANAGING MEMBER</div>
+      <p data-en="Seven years leading Amazon logistics operations — 600-plus associates and 30+ third-party logistics partners — building the SOPs, metrics, and scorecards that ran them. UCLA Anderson MBA, and five years as a fractional CFO and growth consultant to small businesses. Charles pairs an operator's playbook with a CFO's discipline — and an AI analytics engine — to run client supply chains as a 3PL and improve the operations behind them. (U.S. Army Quartermaster veteran, 92Y.)" data-zh="七载领导亚马逊物流运营 — 拥有600多名员工及30多家第三方物流合作伙伴 — 制定操作规范、指标和评分卡，确保其高效运行。加州大学洛杉矶分校安德森管理学院MBA，五年来担任小型企业的部分CFO和增长顾问。查尔斯将操作手册与CFO的严谨结合 — 并引入AI分析引擎 — 以3PL身份管理客户供应链，并优化其背后的运营。（美国陆军军需官退伍军人，92Y。）">Seven years leading Amazon logistics operations — 600-plus associates and 30+ third-party logistics partners — building the SOPs, metrics, and scorecards that ran them. UCLA Anderson MBA, and five years as a fractional CFO and growth consultant to small businesses. Charles pairs an operator's playbook with a CFO's discipline — and an AI analytics engine — to run client supply chains as a 3PL and improve the operations behind them. (U.S. Army Quartermaster veteran, 92Y.)</p>
     </div>
   </div>
 </div></section>
 
 <section class="blk reg"><div class="wrap">
-  <div class="sec-head"><div class="k">Procurement-Ready</div><h2>Registrations &amp; identifiers</h2></div>
+  <div class="sec-head"><div class="k" data-en="Procurement-Ready" data-zh="采购就绪">Procurement-Ready</div><h2 data-en="Registrations & identifiers" data-zh="登记与标识">Registrations & identifiers</h2></div>
   <div class="regtable">
-    <div class="row"><div class="k">Legal name</div><div class="v">PURECJ HOLDING LLC, dba Bastion Supply &amp; Logistics (California LLC, est. 2020)</div></div>
-    <div class="row"><div class="k">SAM.gov</div><div class="v">Active — UEI <b>YG65G9MUT8S4</b> · CAGE <b>9ZKD4</b></div></div>
-    <div class="row"><div class="k">Transportation</div><div class="v">USDOT <b>#5796599</b> · FMCSA Broker of Property</div></div>
-    <div class="row"><div class="k">Certifications</div><div class="v">SBA-Certified SDVOSB / VOSB <b>#98307</b> · California DVBE <b>#2052517</b> · CA DGS Small Business &amp; Microbusiness · VIP START Graduate (2026)</div></div>
-    <div class="row"><div class="k">LA County</div><div class="v">VSS <b>#231947</b> · LSBE #101415 · CBE #101417</div></div>
-    <div class="row"><div class="k">Primary NAICS</div><div class="v"><b>488510</b> Freight Arrangement / 3PL &amp; <b>541614</b> Supply-Chain Consulting</div></div>
-    <div class="row"><div class="k">Additional NAICS</div><div class="v">493110 · 484220 · 484230 · 424710 · 488490</div></div>
+    <div class="row"><div class="k" data-en="Legal name" data-zh="法律名称">Legal name</div><div class="v" data-en="PURECJ HOLDING LLC, dba Bastion Supply & Logistics (California LLC, est. 2020)" data-zh="PURECJ HOLDING LLC，营业名 Bastion Supply & Logistics（加利福尼亚州有限责任公司，成立于2020年）">PURECJ HOLDING LLC, dba Bastion Supply & Logistics (California LLC, est. 2020)</div></div>
+    <div class="row"><div class="k">SAM.gov</div><div class="v"><span data-en="Active" data-zh="活跃">Active</span> — UEI <b>YG65G9MUT8S4</b> · CAGE <b>9ZKD4</b></div></div>
+    <div class="row"><div class="k" data-en="Transportation" data-zh="运输">Transportation</div><div class="v" data-en="USDOT <b>#5796599</b> · FMCSA Broker of Property" data-zh="USDOT <b>#5796599</b> · FMCSA 财产货运经纪">USDOT <b>#5796599</b> · FMCSA Broker of Property</div></div>
+    <div class="row"><div class="k" data-en="Certifications" data-zh="认证">Certifications</div><div class="v" data-en="SBA-Certified SDVOSB / VOSB <b>#98307</b> · California DVBE <b>#2052517</b> · CA DGS Small Business &amp; Microbusiness · VIP START Graduate (2026)" data-zh="SBA 认证 SDVOSB / VOSB <b>#98307</b> · 加州 DVBE <b>#2052517</b> · CA DGS 小型企业与微型企业 · VIP START 结业学员（2026）">SBA-Certified SDVOSB / VOSB <b>#98307</b> · California DVBE <b>#2052517</b> · CA DGS Small Business &amp; Microbusiness · VIP START Graduate (2026)</div></div>
+    <div class="row"><div class="k" data-en="LA County" data-zh="洛杉矶县">LA County</div><div class="v">VSS <b>#231947</b> · LSBE #101415 · CBE #101417</div></div>
+    <div class="row"><div class="k" data-en="Primary NAICS" data-zh="主要NAICS">Primary NAICS</div><div class="v" data-en="<b>488510</b> Freight Arrangement / 3PL & Supply-Chain Consulting" data-zh="<b>488510</b> 货运安排 / 3PL & 供应链咨询"><b>488510</b> Freight Arrangement / 3PL & Supply-Chain Consulting</div></div>
+    <div class="row"><div class="k" data-en="Additional NAICS" data-zh="附加NAICS">Additional NAICS</div><div class="v">493110 · 484220 · 484230 · 424710 · 488490</div></div>
   </div>
 </div></section>
 
 <section class="blk reg" style="background:#fff"><div class="wrap">
-  <div class="sec-head"><div class="k">Coverage</div><h2>Service area</h2></div>
+  <div class="sec-head"><div class="k" data-en="Coverage" data-zh="覆盖范围">Coverage</div><h2 data-en="Service area" data-zh="服务区域">Service area</h2></div>
   <div class="area"><span class="primary">Los Angeles</span><span>Orange</span><span>Riverside</span><span>San Bernardino</span><span>Ventura</span><span>San Diego</span><span>Kern</span><span>Imperial</span></div>
-  <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:14px">Freight brokerage &amp; consulting engagements nationwide.</p>
+  <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:14px" data-en="Freight brokerage & consulting engagements nationwide." data-zh="货运经纪及咨询业务全国范围">Freight brokerage & consulting engagements nationwide.</p>
 </div></section>
 
 <section class="blk quote-sec" id="quote"><div class="wrap">
-  <div class="sec-head"><div class="k">Request a quote</div><h2>Tell us what you need moved</h2>
-    <p>Get a priced quote in seconds on our <a href="https://app.bastionserve.com" style="color:var(--gold);font-weight:700">instant quote &amp; tracking portal &rarr;</a> — or send the lane, commodity, and timeline below and we respond same day.</p></div>
+  <div class="sec-head"><div class="k" data-en="Request a quote" data-zh="请求报价">Request a quote</div><h2 data-en="Tell us what you need moved" data-zh="告诉我们需要运输什么">Tell us what you need moved</h2>
+    <p data-en='Get a priced quote in seconds on our <a href="https://app.bastionserve.com" style="color:var(--gold);font-weight:700">instant quote & tracking portal &rarr;</a> — or send the lane, commodity, and timeline below and we respond same day.' data-zh='在我们的<a href="https://app.bastionserve.com" style="color:var(--gold);font-weight:700">立即报价与跟踪平台</a>上秒速获取报价— 或发送以下航线、商品和计划，我们当日回复。'>Get a priced quote in seconds on our <a href="https://app.bastionserve.com" style="color:var(--gold);font-weight:700">instant quote & tracking portal &rarr;</a> — or send the lane, commodity, and timeline below and we respond same day.</p></div>
   <div class="qwrap">
-    <div class="qok" id="qok">✓ Thanks — your request is in. We'll reply the same business day from charles@bastionserve.com.</div>
+    <div class="qok" id="qok" data-en="✓ Thanks — your request is in. We'll reply the same business day from charles@bastionserve.com." data-zh="感谢 — 您的请求已受理。我们将于同一天从charles@bastionserve.com回复。">✓ Thanks — your request is in. We'll reply the same business day from charles@bastionserve.com.</div>
     <form class="qform" action="https://formsubmit.co/charles@bastionserve.com" method="POST">
-      <div><label for="qn">Name</label><input id="qn" type="text" name="Name" required></div>
-      <div><label for="qc">Company</label><input id="qc" type="text" name="Company"></div>
-      <div><label for="qe">Email</label><input id="qe" type="email" name="Email" required></div>
-      <div><label for="qp">Phone</label><input id="qp" type="tel" name="Phone"></div>
-      <div class="full"><label for="qs">What do you need?</label>
+      <div><label for="qn" data-en="Name" data-zh="姓名">Name</label><input id="qn" type="text" name="Name" required></div>
+      <div><label for="qc" data-en="Company" data-zh="公司">Company</label><input id="qc" type="text" name="Company"></div>
+      <div><label for="qe" data-en="Email" data-zh="电子邮件">Email</label><input id="qe" type="email" name="Email" required></div>
+      <div><label for="qp" data-en="Phone" data-zh="电话">Phone</label><input id="qp" type="tel" name="Phone"></div>
+      <div class="full"><label for="qs" data-en="What do you need?" data-zh="您需要什么？">What do you need?</label>
         <select id="qs" name="Service">
-          <option>3PL / freight brokerage — move a shipment</option>
-          <option>Drayage / transload at LA / Long Beach</option>
-          <option>Warehousing / distribution</option>
-          <option>Specialty / regulated freight (fuel, hazmat, reefer)</option>
-          <option>Supply-chain consulting / network optimization</option>
-          <option>Fractional CFO / financial operations</option>
-          <option>Government teaming / subcontract</option>
-          <option>Other</option>
+          <option data-en="3PL / freight brokerage — move a shipment" data-zh="3PL/货运经纪 — 运输货物">3PL / freight brokerage — move a shipment</option>
+          <option data-en="Drayage / transload at LA / Long Beach" data-zh="洛杉矶/长滩港口拖车/转运换装">Drayage / transload at LA / Long Beach</option>
+          <option data-en="Warehousing / distribution" data-zh="仓储/配送">Warehousing / distribution</option>
+          <option data-en="Specialty / regulated freight (fuel, hazmat, reefer)" data-zh="专业/监管货运（燃料、危险品、冷藏）">Specialty / regulated freight (fuel, hazmat, reefer)</option>
+          <option data-en="Supply-chain consulting / network optimization" data-zh="供应链咨询/网络优化">Supply-chain consulting / network optimization</option>
+          <option data-en="Fractional CFO / financial operations" data-zh="兼职CFO / 财务运营">Fractional CFO / financial operations</option>
+          <option data-en="Government teaming / subcontract" data-zh="政府联合/分包">Government teaming / subcontract</option>
+          <option data-en="Other" data-zh="其他">Other</option>
         </select>
       </div>
-      <div class="full"><label for="qd">Details — lane, commodity, volume, timeline</label><textarea id="qd" name="Details" placeholder="e.g. 4 × 40HC from Port of Long Beach to a Riverside DC, dry goods, weekly, starting next month"></textarea></div>
+      <div class="full"><label for="qd" data-en="Details — lane, commodity, volume, timeline" data-zh="详情 — 路线、商品、数量、时间表">Details — lane, commodity, volume, timeline</label><textarea id="qd" name="Details" placeholder="e.g. 4 × 40HC from Port of Long Beach to a Riverside DC, dry goods, weekly, starting next month" data-en-placeholder="e.g. 4 × 40HC from Port of Long Beach to a Riverside DC, dry goods, weekly, starting next month" data-zh-placeholder="例：4 × 40HC 从长滩港到河滨配送中心，干货，每周一次，下月开始"></textarea></div>
       <input type="text" name="_honey" class="qhoney" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="hidden" name="_subject" value="New quote request — Bastion Supply &amp; Logistics website">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://bastionserve.com/?sent=1#quote">
       <div class="sub">
-        <button type="submit">Send request</button>
-        <span class="hint">Prefer email? <a href="mailto:charles@bastionserve.com">charles@bastionserve.com</a> · (213) 788-9999</span>
+        <button type="submit" data-en="Send request" data-zh="发送请求">Send request</button>
+        <span class="hint"><span data-en="Prefer email?" data-zh="偏好电子邮件？">Prefer email?</span> <a href="mailto:charles@bastionserve.com">charles@bastionserve.com</a> · (213) 788-9999</span>
       </div>
     </form>
   </div>
 </div></section>
 
 <section class="blk contact" id="contact"><div class="wrap">
-  <div class="sec-head"><div class="k" style="color:var(--gold)">Let's talk</div><h2>Shippers, primes &amp; operators</h2></div>
+  <div class="sec-head"><div class="k" style="color:var(--gold)" data-en="Let's talk" data-zh="让我们聊聊">Let's talk</div><h2 data-en="Shippers, primes & operators" data-zh="货主、主要承运人与运营商">Shippers, primes & operators</h2></div>
   <div class="lines"><a href="tel:+12137889999">(213) 788-9999</a> &nbsp;·&nbsp; <a href="mailto:charles@bastionserve.com">charles@bastionserve.com</a></div>
-  <p class="sub">Need freight moved, a network optimized, or a supply chain that runs leaner — we respond same day. Downey, California.</p>
+  <p class="sub" data-en="Need freight moved, a network optimized, or a supply chain that runs leaner — we respond same day. Downey, California." data-zh="需货运转移、网络优化或更精益的供应链——我们当日响应。加州唐尼。">Need freight moved, a network optimized, or a supply chain that runs leaner — we respond same day. Downey, California.</p>
 </div></section>
 
 <footer class="foot"><div class="wrap">
   PURECJ HOLDING LLC dba <span class="gold">Bastion Supply &amp; Logistics</span> · Downey, California · © 2026<br>
-  Third-party logistics, freight brokerage &amp; supply-chain consulting · FMCSA Broker of Property (USDOT #5796599) · SDVOSB / DVBE certified · SAM-registered
+  <span data-en="Third-party logistics, freight brokerage & supply-chain consulting · FMCSA Broker of Property (USDOT #5796599) · SDVOSB / DVBE certified · SAM-registered" data-zh="第三方物流、货运经纪及供应链咨询 · FMCSA 财产货运经纪（USDOT #5796599）· SDVOSB / DVBE 认证 · SAM 注册">Third-party logistics, freight brokerage & supply-chain consulting · FMCSA Broker of Property (USDOT #5796599) · SDVOSB / DVBE certified · SAM-registered</span>
 </div></footer>
 <script>
 (function(){if(location.search.indexOf('sent=1')>-1){var q=document.getElementById('qok');if(q){q.style.display='block';setTimeout(function(){q.scrollIntoView({block:'center'});},120);}}})();
+</script>
+<script>
+(function(){
+  var STORAGE_KEY='bastion-lang';
+  function apply(lang){
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      var v = el.getAttribute(lang==='zh' ? 'data-zh' : 'data-en');
+      if (v !== null) el.innerHTML = v;
+    });
+    document.querySelectorAll('[data-en-placeholder]').forEach(function(el){
+      var v = el.getAttribute(lang==='zh' ? 'data-zh-placeholder' : 'data-en-placeholder');
+      if (v !== null) el.setAttribute('placeholder', v);
+    });
+    document.documentElement.setAttribute('lang', lang==='zh' ? 'zh-CN' : 'en');
+    var btn = document.getElementById('langToggle');
+    if (btn) btn.textContent = lang==='zh' ? 'EN' : '中文';
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch(e){}
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var saved = 'en';
+    try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch(e){}
+    apply(saved);
+    var btn = document.getElementById('langToggle');
+    if (btn) btn.addEventListener('click', function(){
+      var cur = 'en';
+      try { cur = localStorage.getItem(STORAGE_KEY) || 'en'; } catch(e){}
+      apply(cur === 'en' ? 'zh' : 'en');
+    });
+  });
+})();
 </script>
 </body>
 </html>

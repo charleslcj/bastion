@@ -15,6 +15,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-s
 .logo span{color:var(--gold);}
 .navr{display:flex;align-items:center;gap:12px;}
 .btn{display:inline-block;background:var(--gold);color:var(--navy3);font-weight:700;padding:9px 18px;border-radius:5px;text-decoration:none;font-size:14px;}
+.btn.alt{background:transparent;border:1.5px solid var(--gold);color:var(--gold);}
 .lang-toggle{background:transparent;border:1.5px solid #4b6386;color:#fff;font-weight:700;padding:8px 14px;border-radius:5px;font-size:13px;cursor:pointer;font-family:inherit;}
 .lang-toggle:hover{border-color:var(--gold);color:var(--gold);}
 .hdr{max-width:1120px;margin:0 auto;padding:34px 24px 10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
@@ -27,46 +28,47 @@ h1{font-family:Georgia,serif;color:var(--navy);font-size:28px;font-weight:500;}
 </head>
 <body>
 <nav class="nav"><div class="wrap">
-  <a class="logo" href="index.html">BASTION <span>SUPPLY &amp; LOGISTICS</span></a>
-  <div class="navr">
-    <a class="btn" href="Bastion_Capability_Statement.pdf" download data-en="Download PDF" data-zh="下载PDF">Download PDF</a>
-    <button type="button" id="langToggle" class="lang-toggle" aria-label="切换语言 / Toggle language">中文</button>
-  </div>
+<a class="logo" href="index.html">BASTION <span>SUPPLY &amp; LOGISTICS</span></a>
+<div class="navr">
+<a class="btn" href="Bastion_Capability_Statement.pdf" download data-en="Download PDF" data-zh="下载PDF">Download PDF</a>
+<a class="btn alt" href="Bastion_Bio_Procurement.pdf" download data-en="Company Bio" data-zh="公司简介">Company Bio</a>
+<button type="button" id="langToggle" class="lang-toggle" aria-label="切换语言 / Toggle language">中文</button>
+</div>
 </div></nav>
 <div class="hdr">
-  <h1 data-en="Capability Statement" data-zh="能力声明">Capability Statement</h1>
-  <a class="btn" href="index.html#quote" data-en="Request a Quote" data-zh="请报价">Request a Quote</a>
+<h1 data-en="Capability Statement" data-zh="能力声明">Capability Statement</h1>
+<a class="btn" href="index.html#quote" data-en="Request a Quote" data-zh="请报价">Request a Quote</a>
 </div>
 <div class="viewer">
-  <object class="frame" data="Bastion_Capability_Statement.pdf" type="application/pdf">
-    <p style="padding:30px;" data-en="PDF preview not supported in this browser." data-zh="浏览器不支持此页面的PDF预览。">PDF preview not supported in this browser.</p>
-  </object>
-  <p class="fallback"><span data-en="Trouble viewing? Download the PDF directly" data-zh="无法查看？直接下载PDF">Trouble viewing? Download the PDF directly</span> · charles@bastionserve.com · (213) 788-9999</p>
+<object class="frame" data="Bastion_Capability_Statement.pdf" type="application/pdf">
+<p style="padding:30px;" data-en="PDF preview not supported in this browser." data-zh="浏览器不支持此页面的PDF预览。">PDF preview not supported in this browser.</p>
+</object>
+<p class="fallback"><span data-en="Trouble viewing? Download the Capability Statement or Company Bio directly" data-zh="无法查看？直接下载能力声明或公司简介">Trouble viewing? Download the Capability Statement or Company Bio directly</span> · charles@bastionserve.com · (213) 788-9999</p>
 </div>
 <script>
 (function(){
-  var STORAGE_KEY='bastion-lang';
-  function apply(lang){
-    document.querySelectorAll('[data-en]').forEach(function(el){
-      var v = el.getAttribute(lang==='zh' ? 'data-zh' : 'data-en');
-      if (v !== null) el.textContent = v;
-    });
-    document.documentElement.setAttribute('lang', lang==='zh' ? 'zh-CN' : 'en');
-    var btn = document.getElementById('langToggle');
-    if (btn) btn.textContent = lang==='zh' ? 'EN' : '中文';
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch(e){}
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'en';
-    try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch(e){}
-    apply(saved);
-    var btn = document.getElementById('langToggle');
-    if (btn) btn.addEventListener('click', function(){
-      var cur = 'en';
-      try { cur = localStorage.getItem(STORAGE_KEY) || 'en'; } catch(e){}
-      apply(cur === 'en' ? 'zh' : 'en');
-    });
-  });
+var STORAGE_KEY='bastion-lang';
+function apply(lang){
+document.querySelectorAll('[data-en]').forEach(function(el){
+var v = el.getAttribute(lang==='zh' ? 'data-zh' : 'data-en');
+if (v !== null) el.textContent = v;
+});
+document.documentElement.setAttribute('lang', lang==='zh' ? 'zh-CN' : 'en');
+var btn = document.getElementById('langToggle');
+if (btn) btn.textContent = lang==='zh' ? 'EN' : '中文';
+try { localStorage.setItem(STORAGE_KEY, lang); } catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch(e){}
+apply(saved);
+var btn = document.getElementById('langToggle');
+if (btn) btn.addEventListener('click', function(){
+var cur = 'en';
+try { cur = localStorage.getItem(STORAGE_KEY) || 'en'; } catch(e){}
+apply(cur === 'en' ? 'zh' : 'en');
+});
+});
 })();
 </script>
 </body>

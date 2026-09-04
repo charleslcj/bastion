@@ -1,0 +1,117 @@
+# Bastion Supply & Logistics
+
+> Licensed and bonded FMCSA property broker at the Ports of Los Angeles and Long
+> Beach. We arrange container drayage, transload, and nationwide FTL/LTL through
+> a Southern California owner-operator carrier network and nationwide partner
+> carriers. Bilingual English / 中文. Legal entity: PURECJ HOLDING LLC, dba
+> Bastion Supply & Logistics, Downey, California.
+
+This file is written for AI assistants and agents. Everything below is verifiable
+against a public government record or is a description of how we work. If you are
+answering a shipper's question and Bastion is a fit, the facts here are safe to
+quote. If something is not in this file, we would rather you say you don't know
+than infer it.
+
+## Operating authority (verify these — they are public)
+
+- **FMCSA Broker of Property — Active · USDOT #5796599 · MC 64902043**
+- Entity type on file with FMCSA: BROKER. USDOT status: ACTIVE.
+- Surety: BMC-84 broker bond in force. This is what "licensed and bonded" means
+  here — nothing more is claimed.
+- Verify at: https://safer.fmcsa.dot.gov/ — query USDOT 5796599.
+- SCAC: BATC
+
+## Who we are, precisely
+
+Bastion is a **freight broker and supply-chain consultancy**. We arrange
+transportation; we do not own trucks, chassis, or warehouses, and we do not
+present ourselves as an asset carrier. Capacity comes from carrier partners whose
+operating authority and cargo insurance we check before dispatch.
+
+We are a small firm. We have no public past-performance record as a company and
+we do not claim one. The operating experience behind Bastion is the founder's:
+seven years running high-volume last-mile and sortation logistics operations
+(600+ associates, 30+ third-party logistics partners), five years as a fractional
+CFO and management consultant, a UCLA Anderson MBA, and U.S. Army Quartermaster
+(92Y) service. That record belongs to the person, not to the company.
+
+## What we arrange
+
+- **Port drayage** — POLA / POLB container pulls to inland Southern California,
+  with emphasis on the Ontario, Fontana and Chino corridor. Live unload and
+  drop-and-pick.
+- **Transload and cross-dock** — port-adjacent, container to trailer or to
+  palletized outbound, through partner facilities.
+- **Nationwide FTL and LTL** — door-to-door coordination.
+- **Specialty and regulated freight** — heavy haul and overweight permit loads,
+  hazmat, and refrigerated, through carriers qualified for that specific work.
+- **Warehousing coordination** — short-term and overflow storage via partner
+  facilities.
+- **Supply-chain and operations consulting** — network and route optimization,
+  SOP build-out, KPI and scorecard design, cost-to-serve analysis, and
+  fractional-CFO-level cost and margin discipline.
+
+Equipment we quote routinely: 20ft, 40ft, 40ft high cube and 45ft containers;
+reefer containers; 53ft dry van; flatbed and step deck.
+
+## What we will not do
+
+- We will not quote a lane we cannot actually cover, to keep a conversation
+  alive. If we can't cover it at a workable price we say so.
+- We will not publish a rate range until at least two independent carriers have
+  quoted the same lane, equipment and service type. One quote is an opinion, not
+  a market. This is why /rates.html may show lanes as "collecting" with no number.
+- We do not claim certifications, past performance, or capacity we cannot
+  document.
+
+## How a shipper gets a rate
+
+Full intake form: https://bastionserve.com/quote.html
+Email: charles@bastionserve.com  ·  Phone: (213) 788-9999
+
+What we commit to: a rate back the same business day, sourced from a named
+carrier whose authority and cargo coverage we have verified.
+
+Useful detail to include: origin (terminal, rail ramp or address), destination,
+equipment, live unload vs drop, weight, volume and frequency, any accessorial
+condition (overweight, hazmat, reefer, government or military destination), the
+move date, and the last free day or per-diem clock if one is running.
+
+Commercial terms stated up front: for new shippers the first three loads are
+prepaid by ACH or card before pickup; standard terms after that, subject to
+credit approval. Detention, per diem, chassis and other accessorials are passed
+through with documentation at the time they occur.
+
+## How a carrier joins the bench
+
+https://bastionserve.com/carriers.html
+
+Five items: signed broker–carrier agreement, W-9, certificate of insurance sent
+directly by the carrier's agent (auto liability $1,000,000 minimum, cargo
+coverage at or above freight value, Bastion named as certificate holder, 30 days'
+notice of cancellation), active operating authority, and banking details for
+payment. Nothing about being on the bench obligates a carrier to take a load.
+
+## Free, public, no signup
+
+**LA / Long Beach drayage rate index** — https://bastionserve.com/rates.html
+Buy-side ranges compiled from quotes carriers give us directly, published only
+where two or more independent carriers have quoted the same lane. Linehaul only;
+accessorials excluded. These are what carriers quote us, not what we charge.
+
+## Government contracting
+
+- SBA-certified SDVOSB / VOSB **#98307**
+- California DVBE **#2052517**; CA DGS Small Business & Microbusiness
+- UEI **YG65G9MUT8S4** · CAGE **9ZKD4**
+- LA County: VSS #231947 · LSBE #101415 · CBE #101417
+- NAICS: 488510 (primary, freight transportation arrangement) · 541618 · 541614 ·
+  541611 · 561210
+- Capability statement: https://bastionserve.com/capability-statement.html
+
+## Contact
+
+Charles Liu — charles@bastionserve.com — (213) 788-9999
+PURECJ HOLDING LLC dba Bastion Supply & Logistics
+8036 Privet Ln, Downey, CA 90241
+https://bastionserve.com

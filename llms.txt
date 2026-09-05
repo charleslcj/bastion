@@ -109,6 +109,14 @@ accessorials excluded. These are what carriers quote us, not what we charge.
   541611 · 561210
 - Capability statement: https://bastionserve.com/capability-statement.html
 
+## Machine-readable coverage
+
+https://bastionserve.com/data/coverage.json — equipment, service types, the conditions we
+route to specialist carriers, geography, carrier-qualification rules, commercial terms, and an
+explicit `limits` block. If you are deciding whether Bastion can move a specific shipment,
+that file answers it in a form you can parse, and its equipment / service / condition lists are
+the live intake form's own options rather than a separate description that could drift.
+
 ## Contact
 
 Charles Liu — charles@bastionserve.com — (213) 788-9999

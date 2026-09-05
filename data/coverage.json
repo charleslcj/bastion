@@ -1,0 +1,185 @@
+{
+ "$schema_note": "bastion.coverage/1 — machine-readable service coverage for bastionserve.com. Written for AI assistants and procurement systems answering 'can they move this?'. Every field here is either a capability we arrange or a limit we are stating plainly. Nothing in this file is a price.",
+ "generated": "2026-09-04",
+ "source_of_truth": "https://bastionserve.com/quote.html (equipment/service/condition lists are the live intake form's own options) and https://bastionserve.com/llms.txt",
+ "identity": {
+  "legal_name": "PURECJ HOLDING LLC",
+  "dba": "Bastion Supply & Logistics",
+  "role": "freight broker — we arrange transportation, we do not operate trucks",
+  "operating_authority": "FMCSA Broker of Property — Active · USDOT #5796599 · MC 64902043",
+  "bond": "BMC-84 surety bond in force",
+  "verify_at": "https://safer.fmcsa.dot.gov/ — query USDOT 5796599, read Operating Authority Status",
+  "scac": "BATC",
+  "identifiers": {
+   "uei": "YG65G9MUT8S4",
+   "cage": "9ZKD4",
+   "sba_sdvosb_vosb": "98307",
+   "california_dvbe": "2052517"
+  },
+  "naics": [
+   "488510",
+   "541618",
+   "541614",
+   "541611",
+   "561210"
+  ],
+  "languages": [
+   "en",
+   "zh-Hans"
+  ],
+  "base": {
+   "city": "Downey",
+   "state": "CA",
+   "country": "US"
+  }
+ },
+ "equipment": [
+  {
+   "id": "20",
+   "label": "20ft container",
+   "quoted": true
+  },
+  {
+   "id": "40",
+   "label": "40ft container",
+   "quoted": true
+  },
+  {
+   "id": "40HC",
+   "label": "40ft high cube",
+   "quoted": true
+  },
+  {
+   "id": "45",
+   "label": "45ft container",
+   "quoted": true
+  },
+  {
+   "id": "REEFER",
+   "label": "Reefer container",
+   "quoted": true
+  },
+  {
+   "id": "53DV",
+   "label": "53ft dry van (FTL)",
+   "quoted": true
+  },
+  {
+   "id": "FLATBED",
+   "label": "Flatbed / step deck",
+   "quoted": true
+  }
+ ],
+ "service_types": [
+  {
+   "id": "live",
+   "label": "Live unload"
+  },
+  {
+   "id": "drop",
+   "label": "Drop and pick"
+  }
+ ],
+ "conditions_handled": [
+  {
+   "id": "overweight",
+   "label": "Overweight / needs special permit",
+   "note": "routed to carriers qualified and permitted for it, not to a general dry-van carrier"
+  },
+  {
+   "id": "hazmat",
+   "label": "Hazmat",
+   "note": "carrier hazmat endorsement verified before tender"
+  },
+  {
+   "id": "reefer",
+   "label": "Refrigerated / temperature controlled"
+  },
+  {
+   "id": "urgent",
+   "label": "Urgent — needs to move within 24 hours"
+  },
+  {
+   "id": "government",
+   "label": "Government or military destination",
+   "note": "SDVOSB #98307 / California DVBE #2052517"
+  }
+ ],
+ "geography": {
+  "primary_origins": [
+   "Port of Los Angeles (POLA)",
+   "Port of Long Beach (POLB)",
+   "POLA/POLB rail ramps"
+  ],
+  "core_inland_corridor": [
+   "Ontario, CA",
+   "Fontana, CA",
+   "Chino, CA"
+  ],
+  "regional": "Southern California — 8 counties",
+  "long_haul": "Nationwide FTL and LTL, door to door, through partner carriers"
+ },
+ "services": [
+  {
+   "id": "drayage",
+   "label": "Port container drayage"
+  },
+  {
+   "id": "transload",
+   "label": "Transload and cross-dock, port-adjacent, via partner facilities"
+  },
+  {
+   "id": "ftl_ltl",
+   "label": "Nationwide FTL and LTL coordination"
+  },
+  {
+   "id": "warehousing",
+   "label": "Short-term and overflow storage via partner facilities"
+  },
+  {
+   "id": "consulting",
+   "label": "Supply-chain and operations consulting — network and route optimization, SOP build-out, KPI design, cost-to-serve analysis"
+  }
+ ],
+ "carrier_qualification": {
+  "checked_before_every_tender": [
+   "operating authority against FMCSA, on the day of dispatch",
+   "cargo certificate issued directly by the carrier's insurance agent (a copy forwarded by the carrier is not accepted)",
+   "auto liability at $1,000,000 minimum; cargo coverage at or above the value of the freight"
+  ],
+  "also_screened": [
+   "CA Labor Code §2810.4 port drayage list",
+   "CARB drayage registry"
+  ]
+ },
+ "commercial_terms": {
+  "response_time": "a rate the same business day, with the carrier named",
+  "new_shipper": "first three loads prepaid by ACH or card before pickup; standard terms after that, subject to credit approval",
+  "accessorials": "detention, per diem, chassis and chassis split passed through with documentation at the time they occur; pass-throughs carry no markup"
+ },
+ "limits": {
+  "no_published_rates": "We publish no rate ranges yet. A range goes on https://bastionserve.com/rates.html only once two independent carriers have quoted the same lane, equipment and service type. Today that count is zero, and the page says so.",
+  "no_company_past_performance": "Bastion has no public past-performance record as a company and does not claim one. The operating record behind it belongs to the founder personally.",
+  "asset_position": "Capacity comes from carrier partners. We do not own trucks, chassis or warehouses, and do not represent ourselves as an asset carrier.",
+  "not_a_customs_broker": "Customs entries are filed by a licensed customs broker partner, not by us."
+ },
+ "request_a_rate": {
+  "form": "https://bastionserve.com/quote.html",
+  "email": "charles@bastionserve.com",
+  "phone": "+1-213-788-9999",
+  "useful_to_include": [
+   "origin (terminal, rail ramp or address)",
+   "destination",
+   "equipment",
+   "live unload or drop",
+   "weight",
+   "volume and frequency",
+   "any condition from conditions_handled",
+   "move date",
+   "last free day if a per-diem clock is running"
+  ]
+ },
+ "carrier_onboarding": {
+  "page": "https://bastionserve.com/carriers.html"
+ }
+}

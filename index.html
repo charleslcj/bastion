@@ -85,6 +85,15 @@ section.blk{padding:62px 0}
 .card p{font-size:14px;color:var(--muted);margin-bottom:10px}
 .card .naics{font-size:11.5px;color:#94a0ac;font-family:"SFMono-Regular",Menlo,monospace}
 /* why */
+.howstep{background:#fff}
+.howstep .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:26px}
+.howstep .step{border-top:3px solid var(--gold);padding-top:16px}
+.howstep .step .n{font-family:Georgia,serif;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:7px}
+.howstep .step .t{font-weight:800;font-size:16px;margin-bottom:7px;color:var(--ink)}
+.howstep .step p{font-size:14px;color:var(--muted)}
+.howstep .promise{margin-top:30px;background:var(--soft);border-left:3px solid var(--gold);padding:16px 20px;font-size:14.5px;max-width:88ch}
+.howstep .promise b{color:var(--ink)}
+@media(max-width:860px){.howstep .steps{grid-template-columns:1fr;gap:20px}}
 .why{background:var(--navy)}
 .why h2{color:#fff}
 .why .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
@@ -263,6 +272,28 @@ footer.foot .gold{color:var(--gold)}
   <div class="sec-head"><div class="k" data-en="Coverage" data-zh="覆盖范围">Coverage</div><h2 data-en="Service area" data-zh="服务区域">Service area</h2></div>
   <div class="area"><span class="primary">Los Angeles</span><span>Orange</span><span>Riverside</span><span>San Bernardino</span><span>Ventura</span><span>San Diego</span><span>Kern</span><span>Imperial</span></div>
   <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:14px" data-en="Freight brokerage & consulting engagements nationwide." data-zh="货运经纪及咨询业务全国范围">Freight brokerage & consulting engagements nationwide.</p>
+</div></section>
+
+<section class="blk howstep"><div class="wrap">
+  <div class="sec-head"><div class="k" data-en="After you send it" data-zh="您发出之后">After you send it</div><h2 data-en="Three steps, and you know when each one lands" data-zh="三步，每一步什么时候到，都写清楚">Three steps, and you know when each one lands</h2></div>
+  <div class="steps">
+    <div class="step">
+      <div class="n">01</div>
+      <div class="t" data-en="A person reads it today" data-zh="今天就有人读">A person reads it today</div>
+      <p data-en="Not a queue and not an auto-responder. If anything about the lane is ambiguous — terminal, chassis, appointment, weight — we ask you one short question instead of guessing and quoting wrong." data-zh="不是排队，也不是自动回复。这条线只要有哪里不清楚——码头、底盘、预约、重量——我们会问您一个简短的问题，而不是猜一个数报错。">Not a queue and not an auto-responder. If anything about the lane is ambiguous — terminal, chassis, appointment, weight — we ask you one short question instead of guessing and quoting wrong.</p>
+    </div>
+    <div class="step">
+      <div class="n">02</div>
+      <div class="t" data-en="We price it against carriers who run your lane" data-zh="向真跑这条线的承运人询价">We price it against carriers who run your lane</div>
+      <p data-en="Operating authority checked against FMCSA on the day, and a cargo certificate issued directly by the carrier's agent held on file. A carrier we cannot verify does not get your freight." data-zh="当天到 FMCSA 核一次营运资质，且手上必须有由对方保险代理直接签发的货物险证书。核不了的承运人，拿不到您的货。">Operating authority checked against FMCSA on the day, and a cargo certificate issued directly by the carrier's agent held on file. A carrier we cannot verify does not get your freight.</p>
+    </div>
+    <div class="step">
+      <div class="n">03</div>
+      <div class="t" data-en="Same business day, with the carrier named" data-zh="当个工作日回价，带承运人名字">Same business day, with the carrier named</div>
+      <p data-en="Linehaul plus every accessorial we can foresee, itemized at cost. Detention, per diem and chassis are passed through with the documentation, at the time they happen — not thirty days later." data-zh="干线价加上我们能预见的每一项附加费，按实逐项列出。等待费、滞箱费、底盘费凭据当场给，按发生时点转嫁，不拖到三十天后。">Linehaul plus every accessorial we can foresee, itemized at cost. Detention, per diem and chassis are passed through with the documentation, at the time they happen — not thirty days later.</p>
+    </div>
+  </div>
+  <p class="promise" data-en="<b>And the part most brokers leave out:</b> if we cannot cover your lane at a price that works for you, we tell you that same day instead of quoting a number to keep the conversation alive. A quote you can't rely on costs you more than a straight no." data-zh="<b>还有一条，多数经纪不会写在网上：</b> 这条线如果我们做不到对您合适的价格，当天就直说，不会为了留住对话先报一个数。一个靠不住的报价，比一句干脆的“做不了”让您付出更多。"><b>And the part most brokers leave out:</b> if we cannot cover your lane at a price that works for you, we tell you that same day instead of quoting a number to keep the conversation alive. A quote you can't rely on costs you more than a straight no.</p>
 </div></section>
 
 <section class="blk quote-sec" id="quote"><div class="wrap">
